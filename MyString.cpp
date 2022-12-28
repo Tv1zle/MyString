@@ -106,7 +106,7 @@ void MyString::MyStrCat(MyString& b)
 	char* newstr;
 	int j = 0;
 	newstr = new char[l + b.l + 1];
-	strcpy_s(str, l + b.l + 1, newstr);
+	strcpy_s(newstr, l + b.l + 1, str);
 
 
 	for (int i = l; i < l + b.l; i++)
